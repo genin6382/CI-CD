@@ -19,3 +19,7 @@
 * Explained service relationships and configurations, such as:
   - **`depends_on: service_healthy`**: To prevent a race condition where the Node.js app tries to connect before the database is ready.
 
+### 4. Started deploying the app in a multi-node k8s cluster
+* Used StatefulSet and Headless service to host the PostgreSQL database 
+* Used Deployments to host Node.js backend . Exposed the backend using NodePort service .
+
